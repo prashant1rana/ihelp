@@ -18,13 +18,13 @@
     }
   },
   "function": {
-    "scrapper": {
+    "ScrapperInNodeJS": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
       "dependsOn": []
     },
-    "trigger": {
+    "TriggerInNodeJs": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
