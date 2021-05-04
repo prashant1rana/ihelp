@@ -1,0 +1,96 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify09e1c8a7054b4-staging-203556-authRole",
+      "UnauthRoleArn": "arn:aws:iam::776006903638:role/amplify-amplify09e1c8a7054b4-staging-203556-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::776006903638:role/amplify-amplify09e1c8a7054b4-staging-203556-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-amplify09e1c8a7054b4-staging-203556-deployment",
+      "UnauthRoleName": "amplify-amplify09e1c8a7054b4-staging-203556-unauthRole",
+      "StackName": "amplify-amplify09e1c8a7054b4-staging-203556",
+      "StackId": "arn:aws:cloudformation:ap-south-1:776006903638:stack/amplify-amplify09e1c8a7054b4-staging-203556/ff837f20-ab85-11eb-8238-064c0cac9c26",
+      "AmplifyAppId": "d5qg2ygdcmiah"
+    }
+  },
+  "api": {
+    "AdminDB": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "API key to access AdminDB database"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "6rwx23v5xnbwbma5tfyhneisse",
+        "GraphQLAPIEndpointOutput": "https://wqz5vslmgnemjirsjhjkaxnfeu.appsync-api.ap-south-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-wvktdnok7zghtef2zvk6caeydm"
+      },
+      "lastPushTimeStamp": "2021-05-04T01:56:59.757Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify09e1c8a7054b4-staging-203556-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiAdminDB"
+      }
+    }
+  },
+  "function": {
+    "ScrapperInNodeJS": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2021-05-04T01:06:22.365Z",
+      "lastPackageTimeStamp": "2021-05-04T01:06:22.605Z",
+      "distZipFilename": "ScrapperInNodeJS-4b6a5174635730616470-build.zip",
+      "lastDevBuildTimeStamp": "2021-05-04T05:25:00.850Z",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplify09e1c8a7054b4-staging-203556-deployment",
+        "s3Key": "amplify-builds/ScrapperInNodeJS-4b6a5174635730616470-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify09e1c8a7054b4-staging-203556-deployment/amplify-cfn-templates/function/ScrapperInNodeJS-cloudformation-template.json",
+        "logicalId": "functionScrapperInNodeJS"
+      },
+      "lastPushTimeStamp": "2021-05-04T01:56:59.761Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:776006903638:function:ScrapperInNodeJS-staging",
+        "Name": "ScrapperInNodeJS-staging",
+        "LambdaExecutionRole": "ihelpLambdaRoleeae8b422-staging"
+      },
+      "lastPushDirHash": "7fbY7uwa0yuM1GQtPiPKC2aAADg="
+    },
+    "TriggerInNodeJs": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2021-05-04T01:55:38.644Z",
+      "lastPackageTimeStamp": "2021-05-04T01:55:38.679Z",
+      "distZipFilename": "TriggerInNodeJs-35504e67476952664b34-build.zip",
+      "lastDevBuildTimeStamp": "2021-05-04T01:03:43.339Z",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplify09e1c8a7054b4-staging-203556-deployment",
+        "s3Key": "amplify-builds/TriggerInNodeJs-35504e67476952664b34-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify09e1c8a7054b4-staging-203556-deployment/amplify-cfn-templates/function/TriggerInNodeJs-cloudformation-template.json",
+        "logicalId": "functionTriggerInNodeJs"
+      },
+      "lastPushTimeStamp": "2021-05-04T01:56:59.768Z",
+      "output": {
+        "Region": "ap-south-1",
+        "CloudWatchEventRule": "amplify-amplify09e1c8a7054b4-stagi-CloudWatchEvent-4564XGHVFNJM",
+        "Arn": "arn:aws:lambda:ap-south-1:776006903638:function:TriggerInNodeJs-staging",
+        "Name": "TriggerInNodeJs-staging",
+        "LambdaExecutionRole": "ihelpLambdaRole40cf8eb1-staging"
+      },
+      "lastPushDirHash": "dsGQnjfQZVGe/4USt/wMpWkHx3Q="
+    }
+  }
+}
